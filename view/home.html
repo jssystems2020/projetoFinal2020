@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Estaciona Car</title>
+   <link rel="stylesheet" href="style.css">  
+</head>
+<body onload="carregaVeiculos()">
+    <table>
+        <thead>
+            <tr>
+                <th colspan="9"> Controle de Acesso de Veiculos </th>
+            </tr>
+            <tr>
+                <th>Id</th>
+                <th>Veiculo</th>
+                <th>Placa</th>
+                <th>Entrada</th>
+                <th>Saída</th>
+                <th>Valor</th>
+                <th>Data</th>
+                <th>Total</th>
+                <th>Ações</th>
+            </tr>
+        </thead>
+        <tbody id="veiculos">
+        </tbody>
+        <tfoot>
+            <tr>
+                <form>
+                    <td><input class="form-control" id="id" type="text" placeholder="ID" disabled="" style="width:50px"></td>
+                    <td>
+                        <select id="tipo">
+                            <option value="carro">Carro</option>
+                            <option value="moto">Moto</option>
+                        </select>
+                    </td>
+                    <td><input type="text" placeholder="placa" id="placa"></td>
+                    <td><input type="time" placeholder="Entrada" id="entrada"></td>
+                    <td><input type="time" placeholder="Saída" id="saida"></td>
+				<td><input type="text" placeholder="Valor" id="valor"></td>	
+					<!--<td><input type="number" placeholder="R$" id="R$" step="0.01" name="quantity" min="0.01"></td> -->   
+                    <td><input type="date" placeholder="Data" id="data_veiculos"></td>
+                   
+                    <!------------------------BOTÃO CRIAR VEÍCULOS------------------>
+                    <td></td>	
+                    <td><input type="button" value="Cadastrado" onclick="criaVeiculos()"></td>
+                </form>
+            </tr>
+        </tfoot>
+    </table>
+        <div class="msg">
+            <p id="mensagem"></p>
+        </div>
+</body>
+<script src="../view/main.js"></script>
+</html>

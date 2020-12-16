@@ -1,0 +1,76 @@
+* {
+    box-sizing: border-box;
+}
+
+body{
+    background: url(pexels1.jpeg); 
+    background-size: cover;
+    font-family: sans-serif; 
+  }
+
+  select {
+    width: 150px;
+    background: rgba(0, 0, 0, 0.8);
+    margin: center;
+    padding: 8px;
+    color:rgba(255, 255, 255, 0.931);
+    border-radius: 15px;
+}
+
+input, button {
+    width: 150px;
+    background: rgba(0, 0, 0, 0.8);
+    margin: center;
+    padding: 8px;
+    color:rgba(255, 255, 255, 0.931);
+    border-radius: 15px;
+}
+
+button  {
+    text-decoration: none;
+    border: none;
+    display: block;
+    cursor: pointer;
+    text-align: center;
+}
+
+.success {
+    background-color: rgb(54, 80, 231);
+    color: rgb(255, 255, 255);
+}
+
+.delete {
+    background-color: rgb(231, 54, 54);
+    color: rgb(255, 255, 255);
+}
+
+
+table {
+    width: 150px;
+    background: rgba(0, 0, 0, 0.8);
+    margin: auto;
+    padding: 15px;
+    color:rgb(189, 187, 187);
+    border-radius: 40px;
+}
+
+th, td {
+    background: #af05057c;
+    width: 60%!important;
+    padding: 3px 30px;
+    text-align: center;
+    border-bottom: transparent;
+    border-radius: 8px;
+}
+input[type="button"]:hover{
+    background: #fdffffaf;
+}
+input[type="text"]:hover{
+    background: #fdffffaf;
+}
+input[type="time"]:hover{
+    background: #fdffffaf;
+}
+input[type="date"]:hover{
+    background: #fdffffaf;
+}
